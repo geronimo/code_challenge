@@ -1,0 +1,16 @@
+<dn-display-mode ng-model="displayMode"></dn-display-mode>
+
+<table class="table" ng-class="displayMode">
+    <thead>
+        <tr>
+            <th data-field="name">Item Name</th>
+            <th data-field="price">Item Price</th>
+            <th data-field="price">Item Color</th>
+        </tr>
+    </thead>
+    <tr ng-repeat="item in items">
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.color}}</td>
+    </tr>
+</table>
